@@ -1,0 +1,60 @@
+@import "../../../mixins";
+
+.jth-portfolio{
+
+  .jth-portfolio-content{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    line-height: 1.8;
+
+    .jth-portfolio-loading{
+      font-size: 2rem;
+      justify-content: center;
+      align-items: center;
+    }
+
+    p{
+      margin: 1rem 0;
+    }
+  }
+
+  .jth-portfolio-relatedPosts{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    list-style-type: none;
+    counter-reset: counter;
+
+    li{
+      counter-increment: counter;
+      position: relative;
+      
+      button{
+        line-height: 200%;
+        text-align: left;
+      }
+
+      &:before{
+        content: counter(counter) ". ";
+        color: $primaryBrandColor;
+        position: absolute;
+        right: 100%;
+        padding: 0 0.625rem 0 0;
+      }
+
+      a{
+
+        &:before{
+          content: none;
+        }
+      }
+    }
+  }
+
+  section{
+    margin-bottom: 3rem;
+  }
+}
