@@ -6,14 +6,14 @@ import { darkModeState } from '../../../recoilStates';
 
 const DarkModeSwitch = (): JSX.Element => {
   const [dark, setDark] = useRecoilState(darkModeState);
-  const systemPreference = window.matchMedia('(prefers-color-scheme: dark)');
-  const checkSystemPreference = useCallback(() => {
-    if (systemPreference.matches) {
-      setDark(true);
-    } else {
-      setDark(false);
-    }
-  }, [systemPreference.matches, setDark]);
+  // const systemPreference = window.matchMedia('(prefers-color-scheme: dark)');
+  // const checkSystemPreference = useCallback(() => {
+  //   if (systemPreference.matches) {
+  //     setDark(true);
+  //   } else {
+  //     setDark(false);
+  //   }
+  // }, [systemPreference.matches, setDark]);
 
   const darkModeHandling = () => {
     setDark(!dark);
@@ -35,10 +35,6 @@ const DarkModeSwitch = (): JSX.Element => {
   //     systemPreference.removeEventListener('change', checkSystemPreference);
   //   };
   // }, [checkSystemPreference, systemPreference]);
-
-  useEffect(() => {
-    checkSystemPreference();
-  }, [checkSystemPreference]);
 
   return (
     <Switch

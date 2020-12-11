@@ -1,8 +1,9 @@
 import { atom } from 'recoil';
 
+const systemPreference = window.matchMedia('(prefers-color-scheme: dark)');
 const darkModeState = atom({
   key: 'darkModeState',
-  default: false,
+  default: systemPreference.matches,
 });
 
 const headerMessageState = atom({
