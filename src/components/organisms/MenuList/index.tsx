@@ -40,41 +40,41 @@ const MenuList = ({
         role="dialog"
         aria-modal={menuState}
       >
-        <ul className="jth-menuList-links">
-          <li>
-            <Link onClick={menuListHandling} to="/">
-              {t('Header.home')}
-            </Link>
-          </li>
-          <li>
-            <Link onClick={menuListHandling} to="/about">
-              {t('Header.about')}
-            </Link>
-          </li>
-          <li>
-            <Link onClick={menuListHandling} to="/posts">
-              {t('Header.posts')}
-            </Link>
-          </li>
-          <li>
-            <Link onClick={menuListHandling} to="/codes">
-              {t('Header.codes')}
-            </Link>
-          </li>
-          <li>
-            <Link onClick={menuListHandling} to="/portfolio">
-              {t('Header.portfolio')}
-            </Link>
-          </li>
-        </ul>
-        <ul className="jth-menuList-items">
-          <li>
-            <LanguageSwitch />
-          </li>
-          <li>
-            <DarkModeSwitch />
-          </li>
-        </ul>
+        <div className="jth-menuList-items">
+          <ul className="jth-menuList-links">
+            <li>
+              <Link onClick={menuListHandling} to="/">
+                {t('Header.home')}
+              </Link>
+            </li>
+            <li>
+              <Link onClick={menuListHandling} to="/about">
+                {t('Header.about')}
+              </Link>
+            </li>
+            <li>
+              <Link onClick={menuListHandling} to="/posts">
+                {t('Header.posts')}
+              </Link>
+            </li>
+            <li>
+              <Link onClick={menuListHandling} to="/codes">
+                {t('Header.codes')}
+              </Link>
+            </li>
+            <li>
+              <Link onClick={menuListHandling} to="/portfolio">
+                {t('Header.portfolio')}
+              </Link>
+            </li>
+            <li>
+              <LanguageSwitch />
+            </li>
+            <li>
+              <DarkModeSwitch />
+            </li>
+          </ul>
+        </div>
         <div
           role="presentation"
           onClick={menuListHandling}

@@ -18,7 +18,23 @@
   font-family: 'IBMPlexSansKR-Light', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
 
+body{
+  min-height: 100vh;
+  display: flex;
+  overflow-y: overlay;
+}
+
+#root{
+  display: flex;
+  flex-direction: column;
+  flex: 1 auto;
+  white-space: pre-line;
+}
+
+body.jth-menuList-show{
+  overflow-y: hidden;
 }
 
 code {
@@ -67,16 +83,6 @@ figure{
     color: var(--color-down);
     margin-top: 0.5rem;
   }
-}
-
-
-#root{
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  overflow-y: overlay;
-  overflow-x: hidden;
-  white-space: pre-line;
 }
 
 .jth-container{
@@ -162,7 +168,7 @@ figure{
 
 @include notTouchDevice{
 
-  #root{
+  body,#root{
     &::-webkit-scrollbar{
       width: 0.5rem;
     }
