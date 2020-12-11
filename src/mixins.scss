@@ -41,18 +41,18 @@ $danger: var(--danger);
 
 @mixin darkMode {
   [data-theme="dark"] {
-    @content
+    @content;
   }
 }
 
 @mixin touchDevice {
   @media (hover: none) {
-    @content
+    @content;
   }
 }
 
 @mixin notTouchDevice {
-  @media (hover: hover) {
-    @content
+  @media (hover: hover) and (pointer: fine) {
+    @content;
   }
 }
