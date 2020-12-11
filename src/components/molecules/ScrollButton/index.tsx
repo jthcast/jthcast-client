@@ -25,52 +25,47 @@ const ScrollButton = ({
   const [isTopState, setIsTopState] = useState(false);
   const prevScrollRef = useRef(0);
   const showTypeRef = useRef(showType);
-  const root = document.getElementById('root');
 
   const scrollHandling = useCallback(() => {
-    if (root) {
-      const scrollValue = root.scrollTop;
+    const scrollValue = window.scrollY;
 
-      if (scrollValue === 0) {
-        setIsTopState(true);
-      } else {
-        setIsTopState(false);
-      }
-      if (showTypeRef.current === 'notTop') {
-        if (scrollValue === 0) {
-          setIsTopState(false);
-        } else {
-          setIsTopState(true);
-        }
-      } else if (showTypeRef.current === 'up') {
-        if (prevScrollRef.current >= scrollValue) {
-          setScrollState(true);
-        } else {
-          setScrollState(false);
-        }
-      } else if (showTypeRef.current === 'notTopAndUp') {
-        if (scrollValue !== 0 && prevScrollRef.current >= scrollValue) {
-          setScrollState(true);
-        } else {
-          setScrollState(false);
-        }
-      }
-      prevScrollRef.current = scrollValue;
+    if (scrollValue === 0) {
+      setIsTopState(true);
+    } else {
+      setIsTopState(false);
     }
-  }, [root]);
+    if (showTypeRef.current === 'notTop') {
+      if (scrollValue === 0) {
+        setIsTopState(false);
+      } else {
+        setIsTopState(true);
+      }
+    } else if (showTypeRef.current === 'up') {
+      if (prevScrollRef.current >= scrollValue) {
+        setScrollState(true);
+      } else {
+        setScrollState(false);
+      }
+    } else if (showTypeRef.current === 'notTopAndUp') {
+      if (scrollValue !== 0 && prevScrollRef.current >= scrollValue) {
+        setScrollState(true);
+      } else {
+        setScrollState(false);
+      }
+    }
+    prevScrollRef.current = scrollValue;
+  }, []);
 
   useEffect(() => {
     scrollHandling();
-    if (root) {
-      root.addEventListener('scroll', scrollHandling);
+    window.addEventListener('scroll', scrollHandling);
 
-      return () => {
-        root.removeEventListener('scroll', scrollHandling);
-      };
-    }
+    return () => {
+      window.removeEventListener('scroll', scrollHandling);
+    };
 
     return () => null;
-  }, [scrollHandling, root]);
+  }, [scrollHandling]);
 
   return (
     <Button

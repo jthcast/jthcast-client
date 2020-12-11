@@ -3,11 +3,10 @@ import { useLocation } from 'react-router-dom';
 
 const ScrollToTop = (): null => {
   const { pathname } = useLocation();
-  const root = document.getElementById('root');
 
   useLayoutEffect(() => {
-    if (pathname && root) {
-      root.scrollTop = 0;
+    if (pathname) {
+      window.scrollTo(0, 0);
     }
   });
 

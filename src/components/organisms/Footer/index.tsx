@@ -17,11 +17,7 @@ interface FooterProps {
 const Footer = ({ className }: FooterProps): JSX.Element => {
   const { t } = useTranslation();
   const scrollToTop = () => {
-    const root = document.getElementById('root');
-
-    if (root) {
-      root.scrollTo(0, 0);
-    }
+    window.scrollTo(0, 0);
   };
 
   return (

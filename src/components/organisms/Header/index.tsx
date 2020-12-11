@@ -23,41 +23,33 @@ const Header = ({
   title,
 }: HeaderProps): JSX.Element => {
   const { t } = useTranslation();
-  const root = document.getElementById('root');
-
   const [scrollState, setScrollState] = useState(false);
   const prevScrollRef = useRef(0);
   const showTypeRef = useRef(showType);
   const hideRef = useRef(false);
 
   const scrollHandling = useCallback(() => {
-    if (root) {
-      const scrollValue = root.scrollTop;
+    const scrollValue = window.scrollY;
 
-      if (showTypeRef.current === 'up') {
-        hideRef.current = true;
-      }
-      if (prevScrollRef.current >= scrollValue) {
-        setScrollState(true);
-      } else {
-        setScrollState(false);
-      }
-      prevScrollRef.current = scrollValue;
+    if (showTypeRef.current === 'up') {
+      hideRef.current = true;
     }
-  }, [root]);
+    if (prevScrollRef.current >= scrollValue) {
+      setScrollState(true);
+    } else {
+      setScrollState(false);
+    }
+    prevScrollRef.current = scrollValue;
+  }, []);
 
   useEffect(() => {
     scrollHandling();
-    if (root) {
-      root.addEventListener('scroll', scrollHandling);
-    }
+    window.addEventListener('scroll', scrollHandling);
 
     return () => {
-      if (root) {
-        root.removeEventListener('scroll', scrollHandling);
-      }
+      window.removeEventListener('scroll', scrollHandling);
     };
-  }, [scrollHandling, root]);
+  }, [scrollHandling]);
 
   return (
     <>
