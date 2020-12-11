@@ -25,6 +25,11 @@
 .jth-accordion-contents{
   transition: 0.2s ease-in-out;
   overflow: hidden;
+
+  p{
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+  }
 }
 
 .jth-accordion-icon-reverse{
