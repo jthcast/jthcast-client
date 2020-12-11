@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import './DarkModeSwitch.scss';
 import { useRecoilState } from 'recoil';
 import Switch from '../../atoms/Switch';
