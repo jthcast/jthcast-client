@@ -18,12 +18,12 @@
     "copyright": "© 2020 JthCast.",
     "contactMessage": "함께 환상적인 것을 만들어 봐요",
     "contactSubMessage": "제가 도전할 창의적인 프로젝트가 있나요? 연락 주세요.",
-    "contactButtonMessage": "연락 하기 💌"
+    "contactButtonMessage": "연락 하기 📧"
   },
   "ErrorPage": {
     "errorMessage": "오류가 발생했습니다 💥",
     "errorSubMessage": "죄송합니다 😥 해당 오류를 제보 부탁드립니다.",
-    "reportButtonMessage": "제보 하기 💌"
+    "reportButtonMessage": "제보 하기 📧"
   },
   "404Page": {
     "title": "404",

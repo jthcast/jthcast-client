@@ -18,12 +18,12 @@
     "copyright": "© 2020 JthCast.",
     "contactMessage": "Let's make something beautiful together",
     "contactSubMessage": "Do you have a creative challenge for me? Get in touch with me.",
-    "contactButtonMessage": "Get in touch 💌"
+    "contactButtonMessage": "Get in touch 📧"
   },
   "ErrorPage": {
     "errorMessage": "ERROR 💥",
     "errorSubMessage": "Sorry about this 😥 Please report the error.",
-    "reportButtonMessage": "Report 💌"
+    "reportButtonMessage": "Report 📧"
   },
   "404Page": {
     "title": "404",
