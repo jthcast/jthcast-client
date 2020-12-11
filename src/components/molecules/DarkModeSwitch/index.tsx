@@ -27,13 +27,18 @@ const DarkModeSwitch = (): JSX.Element => {
     }
   }, [dark]);
 
-  useEffect(() => {
-    systemPreference.addEventListener('change', checkSystemPreference);
+  // useEffect(() => {
+  //   checkSystemPreference();
+  //   systemPreference.addEventListener('change', checkSystemPreference);
 
-    return () => {
-      systemPreference.removeEventListener('change', checkSystemPreference);
-    };
-  }, [checkSystemPreference, systemPreference]);
+  //   return () => {
+  //     systemPreference.removeEventListener('change', checkSystemPreference);
+  //   };
+  // }, [checkSystemPreference, systemPreference]);
+
+  useEffect(() => {
+    checkSystemPreference();
+  }, [checkSystemPreference]);
 
   return (
     <Switch
