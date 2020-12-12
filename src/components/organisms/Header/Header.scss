@@ -49,6 +49,20 @@
   ul{
     list-style: none;
     display: flex;
+
+    li{
+      
+      a{
+
+        &:before{
+          transition: none;
+        }
+      }
+
+      button{
+        transition: none;
+      }
+    }
   }
 
   .jth-header-items-left{
