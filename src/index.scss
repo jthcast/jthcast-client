@@ -32,6 +32,7 @@ body{
   flex-direction: column;
   flex: 1 auto;
   white-space: pre-line;
+  overflow-x: hidden;
 }
 
 body.jth-menuList-show{
@@ -59,7 +60,7 @@ a{
     bottom: 0;
     right: 0;
     transition: 0.4s;
-    background-color: var(--primary-brand-base);
+    background-color: var(--secondary-brand-base);
     z-index: -1;
   }
 
@@ -219,6 +220,7 @@ figure{
 :root {
   --background-base: #FFFFFF;
   --background-base-opacity: rgba(255, 255, 255, 0.85);
+  --background-down-opacity: rgba(255, 255, 255, 0.3);
   --scrollbar-base-opacity: rgba(0, 0, 0, 0.5);
   --background-code-base: #f9f2f4;
   --color-base: #000000;
@@ -247,6 +249,7 @@ figure{
 @include darkMode{
   --background-base: #000000;
   --background-base-opacity: rgba(0, 0, 0, 0.85);
+  --background-down-opacity: rgba(0, 0, 0, 0.3);
   --scrollbar-base-opacity: rgba(255, 255, 255, 0.5);
   --background-code-base: #3C3636;
   --color-base: #FFFFFF;
