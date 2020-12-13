@@ -22,9 +22,11 @@ Because it's a project to experience and learn the latest technologies.
 
 ## 🔧 Built With
 
-- React
-- ES6
+- Javascript ES6+
 - Typescript
+- React
+- Recoil
+- Testing Library
 - SCSS
 
 ## 📝 License
