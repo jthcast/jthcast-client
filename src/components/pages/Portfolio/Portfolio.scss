@@ -2,6 +2,18 @@
 
 .jth-portfolio{
 
+  .jth-portfolio-title{
+
+    h1{
+      font-size: 2rem;
+    }
+
+    p{
+      font-size: 1.375rem;
+      font-weight: bold;
+    }
+  }
+
   .jth-portfolio-content{
     margin-top: 5rem;
     margin-bottom: 5rem;
@@ -13,8 +25,33 @@
       align-items: center;
     }
 
+    .jth-portfolio-widthImage{
+      height: 60vh;
+      object-fit: cover;
+      object-position: center center;
+    }
+
+    .jth-portfolio-builtWith{
+      list-style-type: none;
+
+      li{
+
+        &:before{
+          content: " · "
+        }
+      }
+    }
+
+    .jth-portfolio-logo{
+      font-size: 10rem;
+    }
+
     p{
       margin: 1rem 0;
+    }
+
+    svg{
+      font-size: 3rem;
     }
   }
 

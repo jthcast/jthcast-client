@@ -1,3 +1,5 @@
+import portfolioJthcast from '../../resources/images/portfolio/jthcast/jthcast.png';
+
 export interface PortfolioDataProps {
   seq: string;
   title: string;
@@ -10,6 +12,19 @@ export interface PortfolioDataProps {
   demo?: string;
 }
 
-const portfoliosData: Array<PortfolioDataProps> = [];
+const portfoliosData: Array<PortfolioDataProps> = [
+  {
+    seq: '1',
+    title: 'JthCast',
+    content:
+      '경험하고 싶거나 배우고 싶은 기술들을 마음껏 사용하기 위해 만든 개인 블로그',
+    date: '2020-12-11',
+    image: portfolioJthcast,
+    series: 'jthCast',
+    detailPage: true,
+    github: 'https://github.com/jthcast/jthcast-client',
+    demo: 'https://jthcast.github.io/',
+  },
+];
 
 export default portfoliosData;

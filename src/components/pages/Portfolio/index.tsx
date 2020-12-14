@@ -45,7 +45,7 @@ const Portfolio = (): JSX.Element => {
             description={portfolioState.content}
           />
           <article className="jth-portfolio">
-            <section className="jth-container jth-portfolio-content">
+            <section className="jth-portfolio-content">
               <ErrorBoundary>
                 <Suspense
                   fallback={
