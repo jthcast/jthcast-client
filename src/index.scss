@@ -25,6 +25,7 @@ body{
   min-height: 100vh;
   display: flex;
   overflow-y: overlay;
+  line-height: 1.8;
 }
 
 #root{
@@ -87,6 +88,27 @@ figure{
   }
 }
 
+code{
+  padding: 0.1em 0.3em;
+  border-radius: 0.3em;
+  background: var(--background-code-base);
+  color: var(--color-code-base);
+}
+
+.jth-text-primary{
+  padding: 0.1em 0.3em;
+  border-radius: 0.3em;
+  background: var(--primary-brand-base);
+  color: var(--black);
+}
+
+.jth-text-secondary{
+  padding: 0.1em 0.3em;
+  border-radius: 0.3em;
+  background: var(--secondary-brand-base);
+  color: var(--white);
+}
+
 .jth-container{
   max-width: $maxWidth;
   display: flex;
@@ -94,13 +116,6 @@ figure{
   width: 100%;
   padding: 0 5rem;
   margin: auto;
-}
-
-.jth-text{
-  padding: 0.1em 0.3em;
-  border-radius: 0.3em;
-  background: var(--background-code-base);
-  color: var(--color-code-base);
 }
 
 .jth-router-link{
@@ -155,6 +170,10 @@ figure{
   }
 
   img{
+    width: 100%;
+  }
+
+  video{
     width: 100%;
   }
 
