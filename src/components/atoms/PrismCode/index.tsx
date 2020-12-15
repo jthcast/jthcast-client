@@ -17,7 +17,11 @@ interface IPrismCode {
   plugins?: Array<string>;
 }
 
-const PrismCode = ({ code, language, plugins }: IPrismCode): JSX.Element => {
+const PrismCode = ({
+  code,
+  language = 'tsx',
+  plugins,
+}: IPrismCode): JSX.Element => {
   const ref = useRef<HTMLElement>(null);
 
   useEffect(() => {
