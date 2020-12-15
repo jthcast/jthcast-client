@@ -20,7 +20,9 @@ const ErrorPage = (): JSX.Element => {
         >
           {t('ErrorPage.reportButtonMessage')}
         </Button>
-        <Link to="/">{t('Common.homePage')}</Link>
+        <Link className="jth-errorPage-link" to="/">
+          {t('Common.homePage')}
+        </Link>
       </div>
     </section>
   );
