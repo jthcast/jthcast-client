@@ -64,6 +64,9 @@ const Post = (): JSX.Element => {
               {postState.image && (
                 <img src={postState.image} alt={postState.title} />
               )}
+              {postState.content && (
+                <p className="jth-post-info-content">{postState.content}</p>
+              )}
             </section>
             <section className="jth-container jth-post-content">
               <ErrorBoundary>

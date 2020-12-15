@@ -11,6 +11,11 @@
     margin-top: 5rem;
     text-align: center;
 
+    .jth-post-info-content{
+      color: $color;
+      text-align: start;
+    }
+
     p{
       color: $colorDown;
     }
