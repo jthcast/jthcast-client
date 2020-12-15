@@ -10,9 +10,10 @@ export interface PortfolioDataProps {
   detailPage?: boolean;
   github?: string;
   demo?: string;
+  visible: boolean;
 }
 
-const portfoliosData: Array<PortfolioDataProps> = [
+const portfolios: Array<PortfolioDataProps> = [
   {
     seq: '1',
     title: 'JthCast',
@@ -24,7 +25,9 @@ const portfoliosData: Array<PortfolioDataProps> = [
     detailPage: true,
     github: 'https://github.com/jthcast/jthcast-client',
     demo: 'https://jthcast.github.io/',
+    visible: true,
   },
 ];
 
+const portfoliosData = portfolios.filter((portfolio) => portfolio.visible);
 export default portfoliosData;

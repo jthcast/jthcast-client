@@ -13,8 +13,10 @@ export interface CodeProps {
     rotate,
     onClick,
   }: IconProps) => JSX.Element;
+  visible: boolean;
 }
 
-const codesData: Array<CodeProps> = [];
+const codes: Array<CodeProps> = [];
+const codesData = codes.filter((code) => code.visible);
 
 export default codesData;
