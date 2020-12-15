@@ -36,10 +36,10 @@ const Portfolios = (): JSX.Element => {
                             to={`/portfolio/${portfolio.seq}`}
                             aria-label={portfolio.title}
                           >
-                            <h1>{portfolio.title}</h1>
+                            <h2>{portfolio.title}</h2>
                           </Link>
                         ) : (
-                          <h1>{portfolio.title}</h1>
+                          <h2>{portfolio.title}</h2>
                         )}
                         <div className="jth-portfolios-item-info-links">
                           {portfolio.github && (
