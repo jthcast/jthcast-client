@@ -7,6 +7,13 @@
   font-style: normal;
   font-display: block;
 }
+@font-face {
+  font-family: 'Source Code Pro';
+  src: url('./resources/fonts/Source-code-pro/SourceCodePro-Regular.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
 
 * {
   box-sizing: border-box;
@@ -62,10 +69,6 @@ h5{
 
 h6{
   font-size: 0.67rem;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
 a{
@@ -224,6 +227,20 @@ figure{
     }
     &::-webkit-scrollbar-track{
       background-color: rgba(0,0,0,0);
+    }
+  }
+
+  pre{
+    &::-webkit-scrollbar{
+      width: 0.5rem;
+    }
+    &::-webkit-scrollbar-thumb{
+      background-color: var(--color-down);
+      border-radius: 1rem;
+    }
+    &::-webkit-scrollbar-track{
+      background-color: var(--primary-brand-background-base);
+      border-radius: 1rem;
     }
   }
 }
