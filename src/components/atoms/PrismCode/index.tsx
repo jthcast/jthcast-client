@@ -3,12 +3,12 @@ import Prism from 'prismjs';
 import 'prismjs/components/prism-css-extras';
 import 'prismjs/components/prism-scss';
 import 'prismjs/components/prism-typescript';
-import 'prismjs/components/prism-jsx';
-import 'prismjs/components/prism-tsx';
+// import 'prismjs/components/prism-jsx';
+// import 'prismjs/components/prism-tsx';
 // import 'prismjs/plugins/line-numbers/prism-line-numbers';
 // import 'prismjs/plugins/line-numbers/prism-line-numbers.css';
-// import 'prismjs/themes/prism-tomorrow.css';
-import './prism-vsc-dark-plus.scss';
+import 'prismjs/themes/prism-tomorrow.css';
+// import './prism-vsc-dark-plus.scss';
 import './PrismCode.scss';
 
 interface IPrismCode {
@@ -19,7 +19,7 @@ interface IPrismCode {
 
 const PrismCode = ({
   code,
-  language = 'tsx',
+  language = 'typescript',
   plugins,
 }: IPrismCode): JSX.Element => {
   const ref = useRef<HTMLElement>(null);
