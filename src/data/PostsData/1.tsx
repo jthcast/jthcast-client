@@ -38,17 +38,6 @@ const Item = (): JSX.Element => {
         라고 말하고 싶다.
       </p>
       <p>
-        자세한 정의와 설명은 해당 방법론을 주장한{' '}
-        <a
-          target="_blank"
-          rel="noreferrer"
-          href="https://atomicdesign.bradfrost.com/"
-        >
-          Brad Frost의 설명
-        </a>
-        을 참고하기 바란다.
-      </p>
-      <p>
         <figure>
           <img
             src="https://cdn.jsdelivr.net/gh/jthcast/jthcast-client@master/src/resources/images/post/1/structure.png?raw=true"
@@ -60,6 +49,22 @@ const Item = (): JSX.Element => {
             부활할지도 모르겠다.
           </figcaption>
         </figure>
+      </p>
+      <p>
+        자세한 정의와 설명은 이 방법론을 주장한 Brad Frost의 홈페이지를 참고하기
+        바란다.
+      </p>
+      <p>
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://atomicdesign.bradfrost.com/"
+        >
+          Brad Frost의 홈페이지
+          <span role="img" aria-label="right pointing finger">
+            👉
+          </span>
+        </a>
       </p>
       <h3>Atoms</h3>
       <p>Atomic Design에서 가장 기초가 되는 컴포넌트인 Atoms를 알아보자.</p>
