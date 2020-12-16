@@ -106,10 +106,11 @@ figure{
   align-items: center;
 
   img{
-    width: 100%
+    max-width: 100%
   }
 
   figcaption{
+    font-size: 0.9rem;
     color: var(--color-down);
     margin-top: 0.5rem;
   }
