@@ -1,12 +1,5 @@
 import React from 'react';
 import { IconLogoColored } from '../../components/atoms/Icons';
-import portfolioJthcast from '../../resources/images/portfolio/jthcast/jthcast.png';
-import darkModeVideo from '../../resources/images/portfolio/jthcast/darkmode.mp4';
-import internationalizationVideo from '../../resources/images/portfolio/jthcast/internationalization.mp4';
-import accessibilityVideo from '../../resources/images/portfolio/jthcast/accessibility.mp4';
-import boxMockup from '../../resources/images/portfolio/jthcast/Craft Paper Box Mockup.jpg';
-import tagsMockup from '../../resources/images/portfolio/jthcast/Tags Mockup.jpg';
-import cupMockup from '../../resources/images/portfolio/jthcast/Cup Mockup.jpg';
 
 const Item = (): JSX.Element => {
   return (
@@ -22,7 +15,7 @@ const Item = (): JSX.Element => {
       </section>
       <section className="jth-section">
         <img
-          src={portfolioJthcast}
+          src="https://cdn.jsdelivr.net/gh/jthcast/jthcast-client@master/src/resources/images/portfolio/jthcast/jthcast.png?raw=true"
           alt="jthcast"
           className="jth-portfolio-widthImage"
         />
@@ -98,7 +91,7 @@ const Item = (): JSX.Element => {
             loop
             playsInline
             autoPlay
-            src={darkModeVideo}
+            src="https://cdn.jsdelivr.net/gh/jthcast/jthcast-client@master/src/resources/images/portfolio/jthcast/darkmode.mp4?raw=true"
           />
           <div className="jth-section-rowGrid">
             <h2>다크 모드</h2>
@@ -127,7 +120,7 @@ const Item = (): JSX.Element => {
             loop
             playsInline
             autoPlay
-            src={internationalizationVideo}
+            src="https://cdn.jsdelivr.net/gh/jthcast/jthcast-client@master/src/resources/images/portfolio/jthcast/internationalization.mp4?raw=true"
             className="jth-portfolio-widthImage"
           />
         </div>
@@ -140,7 +133,7 @@ const Item = (): JSX.Element => {
             loop
             playsInline
             autoPlay
-            src={accessibilityVideo}
+            src="https://cdn.jsdelivr.net/gh/jthcast/jthcast-client@master/src/resources/images/portfolio/jthcast/accessibility.mp4?raw=true"
           />
           <div className="jth-section-rowGrid">
             <h2>웹 표준</h2>
@@ -187,9 +180,18 @@ const Item = (): JSX.Element => {
       </section>
       <section className="jth-section">
         <div className="jth-container jth-section-rowGrid-center">
-          <img src={tagsMockup} alt="Tags Mockup" />
-          <img src={cupMockup} alt="Cup Mockup" />
-          <img src={boxMockup} alt="Box Mockup" />
+          <img
+            src="https://cdn.jsdelivr.net/gh/jthcast/jthcast-client@master/src/resources/images/portfolio/jthcast/Tags%20Mockup.jpg?raw=true"
+            alt="Tags Mockup"
+          />
+          <img
+            src="https://cdn.jsdelivr.net/gh/jthcast/jthcast-client@master/src/resources/images/portfolio/jthcast/Cup%20Mockup.jpg?raw=true"
+            alt="Cup Mockup"
+          />
+          <img
+            src="https://cdn.jsdelivr.net/gh/jthcast/jthcast-client@master/src/resources/images/portfolio/jthcast/Craft%20Paper%20Box%20Mockup.jpg?raw=true"
+            alt="Box Mockup"
+          />
         </div>
       </section>
     </>

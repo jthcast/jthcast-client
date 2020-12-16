@@ -1,7 +1,6 @@
 import React from 'react';
 import './About.scss';
 import { useTranslation } from 'react-i18next';
-import myPhoto from '../../../resources/images/myPhoto.jpg';
 import Accordion from '../../atoms/Accordion';
 import {
   IconCommentDots,
@@ -57,7 +56,7 @@ const About = (): JSX.Element => {
             <img
               className="jth-animation"
               data-animationtype="opacityUp"
-              src={myPhoto}
+              src="https://cdn.jsdelivr.net/gh/jthcast/jthcast-client@master/src/resources/images/myPhoto.jpg?raw=true"
               alt="test"
             />
           </div>

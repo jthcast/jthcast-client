@@ -1,9 +1,6 @@
 import React from 'react';
 import Switch from '../../components/atoms/Switch';
 import DarkModeSwitch from '../../components/molecules/DarkModeSwitch';
-import structure from '../../resources/images/post/1/structure.png';
-import header from '../../resources/images/post/1/header.jpg';
-import figmaSwitch from '../../resources/images/post/1/figma switch.png';
 
 const Item = (): JSX.Element => {
   return (
@@ -50,7 +47,10 @@ const Item = (): JSX.Element => {
       </p>
       <p>
         <figure>
-          <img src={structure} aria-label="Structure" />
+          <img
+            src="https://cdn.jsdelivr.net/gh/jthcast/jthcast-client@master/src/resources/images/post/1/structure.png?raw=true"
+            aria-label="Structure"
+          />
           <figcaption>
             이번 블로그를 개발하며 Atomic Design으로 구성한 파일 구조. Templates
             단계는 생략하였다. 나중에 규모가 커지고 스켈레톤을 넣을 때
@@ -92,7 +92,10 @@ const Item = (): JSX.Element => {
       </p>
       <p>
         <figure>
-          <img src={header} aria-label="Header image" />
+          <img
+            src="https://cdn.jsdelivr.net/gh/jthcast/jthcast-client@master/src/resources/images/post/1/header.jpg?raw=true"
+            aria-label="Header image"
+          />
           <figcaption>
             여러 가지 구성 요소들이 모여 만들어진 헤더 컴포넌트
           </figcaption>
@@ -136,7 +139,10 @@ const Item = (): JSX.Element => {
       </p>
       <p>
         <figure>
-          <img src={figmaSwitch} aria-label="Figma Switch image" />
+          <img
+            src="https://cdn.jsdelivr.net/gh/jthcast/jthcast-client@master/src/resources/images/post/1/figma%20switch.png?raw=true"
+            aria-label="Figma Switch image"
+          />
           <figcaption>
             Figma도 컴포넌트 기반으로 디자인한다. 해님 표정이... 강렬하다.
           </figcaption>
