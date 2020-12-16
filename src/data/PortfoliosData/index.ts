@@ -1,3 +1,5 @@
+// import portfolioJthcast from '../../resources/images/portfolio/jthcast/jthcast.png';
+
 export interface PortfolioDataProps {
   seq: string;
   title: string;

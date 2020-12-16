@@ -1,6 +1,9 @@
 import React from 'react';
 import Switch from '../../components/atoms/Switch';
 import DarkModeSwitch from '../../components/molecules/DarkModeSwitch';
+// import structure from '../../resources/images/post/1/structure.png';
+// import header from '../../resources/images/post/1/header.jpg';
+// import figmaSwitch from '../../resources/images/post/1/figma switch.png';
 
 const Item = (): JSX.Element => {
   return (

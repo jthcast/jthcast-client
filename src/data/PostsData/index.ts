@@ -1,3 +1,5 @@
+// import atomicDesign from '../../resources/images/post/1/atomic-design-process.png';
+
 export interface PostsDataProps {
   seq: string;
   title: string;

@@ -1,5 +1,12 @@
 import React from 'react';
 import { IconLogoColored } from '../../components/atoms/Icons';
+// import portfolioJthcast from '../../resources/images/portfolio/jthcast/jthcast.png';
+// import darkModeVideo from '../../resources/images/portfolio/jthcast/darkmode.mp4';
+// import internationalizationVideo from '../../resources/images/portfolio/jthcast/internationalization.mp4';
+// import accessibilityVideo from '../../resources/images/portfolio/jthcast/accessibility.mp4';
+// import boxMockup from '../../resources/images/portfolio/jthcast/Craft Paper Box Mockup.jpg';
+// import tagsMockup from '../../resources/images/portfolio/jthcast/Tags Mockup.jpg';
+// import cupMockup from '../../resources/images/portfolio/jthcast/Cup Mockup.jpg';
 
 const Item = (): JSX.Element => {
   return (

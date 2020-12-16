@@ -14,6 +14,7 @@ import {
 import Button from '../../atoms/Button';
 import Meta from '../../atoms/Meta';
 import useAnimation from '../../../customHooks/useAnimation';
+// import myPhoto from '../../../resources/images/myPhoto.jpg';
 
 const About = (): JSX.Element => {
   const { t } = useTranslation();
