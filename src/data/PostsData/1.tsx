@@ -37,19 +37,17 @@ const Item = (): JSX.Element => {
         </span>
         라고 말하고 싶다.
       </p>
-      <p>
-        <figure>
-          <img
-            src="https://cdn.jsdelivr.net/gh/jthcast/jthcast-client@master/src/resources/images/post/1/structure.png?raw=true"
-            aria-label="Structure"
-          />
-          <figcaption>
-            이번 블로그를 개발하며 Atomic Design으로 구성한 파일 구조. Templates
-            단계는 생략하였다. 나중에 규모가 커지고 스켈레톤을 넣을 때
-            부활할지도 모르겠다.
-          </figcaption>
-        </figure>
-      </p>
+      <figure>
+        <img
+          src="https://cdn.jsdelivr.net/gh/jthcast/jthcast-client@master/src/resources/images/post/1/structure.png?raw=true"
+          aria-label="Structure"
+        />
+        <figcaption>
+          이번 블로그를 개발하며 Atomic Design으로 구성한 파일 구조. Templates
+          단계는 생략하였다. 나중에 규모가 커지고 스켈레톤을 넣을 때 부활할지도
+          모르겠다.
+        </figcaption>
+      </figure>
       <p>
         자세한 정의와 설명은 이 방법론을 주장한 Brad Frost의 홈페이지를 참고하기
         바란다.
@@ -98,17 +96,15 @@ const Item = (): JSX.Element => {
         Molecules에 Atom을 더 붙이거나 또 다른 Molecules 가 합쳐져서 만들어진
         단계이다. 단계가 진행될수록 재사용성이떨어지는 것을 확인할 수 있다.
       </p>
-      <p>
-        <figure>
-          <img
-            src="https://cdn.jsdelivr.net/gh/jthcast/jthcast-client@master/src/resources/images/post/1/header.jpg?raw=true"
-            aria-label="Header image"
-          />
-          <figcaption>
-            여러 가지 구성 요소들이 모여 만들어진 헤더 컴포넌트
-          </figcaption>
-        </figure>
-      </p>
+      <figure>
+        <img
+          src="https://cdn.jsdelivr.net/gh/jthcast/jthcast-client@master/src/resources/images/post/1/header.jpg?raw=true"
+          aria-label="Header image"
+        />
+        <figcaption>
+          여러 가지 구성 요소들이 모여 만들어진 헤더 컴포넌트
+        </figcaption>
+      </figure>
       <p>
         기본이 되는 Atoms 구현하고 이에 필요한 기능을 하는 Molecules를 잘
         구성한다면 Organizms부터는 만들기가 정말 수월하다.
@@ -145,17 +141,15 @@ const Item = (): JSX.Element => {
         재사용성을 생각하며 컴포넌트 단위로 디자인하여야 할 것이다. 그래서
         Figma를 사용하는 디자이너와 시너지 효과가 좋다고 느꼈다.
       </p>
-      <p>
-        <figure>
-          <img
-            src="https://cdn.jsdelivr.net/gh/jthcast/jthcast-client@master/src/resources/images/post/1/figma%20switch.png?raw=true"
-            aria-label="Figma Switch image"
-          />
-          <figcaption>
-            Figma도 컴포넌트 기반으로 디자인한다. 해님 표정이... 강렬하다.
-          </figcaption>
-        </figure>
-      </p>
+      <figure>
+        <img
+          src="https://cdn.jsdelivr.net/gh/jthcast/jthcast-client@master/src/resources/images/post/1/figma%20switch.png?raw=true"
+          aria-label="Figma Switch image"
+        />
+        <figcaption>
+          Figma도 컴포넌트 기반으로 디자인한다. 해님 표정이... 강렬하다.
+        </figcaption>
+      </figure>
       <p>
         결론은 컴포넌트 기반 개발 방법론이므로, 가장 중요한 것은 프로그래밍을
         배우며 항상 강조되었던 <span className="jth-text">추상화</span>와{' '}
