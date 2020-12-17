@@ -9,7 +9,8 @@ export interface CodeProps {
   title: string;
   subTitle: string;
   tags?: string[];
-  date?: string;
+  registrationDate?: string;
+  modifiedDate?: string;
   icon?: ({
     className,
     style,
@@ -27,7 +28,8 @@ const codes: Array<CodeProps> = [
     subTitle:
       '서로 다른 n개의 원소에서 r개를 중복을 허용하지 않고 선택하여 순서 있게 늘어 놓은 것',
     tags: ['확률 및 통계학'],
-    date: '2020-12-17',
+    registrationDate: '2020-12-17',
+    modifiedDate: '2020-12-18',
     icon: IconPermutation,
     visible: true,
   },
@@ -36,7 +38,8 @@ const codes: Array<CodeProps> = [
     title: '조합',
     subTitle: '서로 다른 n개의 원소 중에서 순서에 상관없이 r개를 선택하는 것',
     tags: ['확률 및 통계학'],
-    date: '2020-12-17',
+    registrationDate: '2020-12-17',
+    modifiedDate: '',
     icon: IconCombination,
     visible: true,
   },

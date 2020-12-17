@@ -60,7 +60,9 @@ const Post = (): JSX.Element => {
             <section className="jth-container jth-post-info">
               {postState.title && <h1>{postState.title}</h1>}
               {postState.tags && <p>{postState.tags.join(' / ')}</p>}
-              {postState.date && <time>{postState.date}</time>}
+              {postState.registrationDate && (
+                <time>{postState.registrationDate}</time>
+              )}
               {postState.image && (
                 <img src={postState.image} alt={postState.title} />
               )}
