@@ -44,7 +44,7 @@ const Code = (): JSX.Element => {
             <section className="jth-container jth-code-info">
               {codeState.title && <h1>{codeState.title}</h1>}
               {codeState.subTitle && <p>{codeState.subTitle}</p>}
-              {codeState.date && <time>{codeState.date}</time>}
+              {/* {codeState.date && <time>{codeState.date}</time>} */}
               {codeState.icon && codeState.icon({})}
             </section>
             <section className="jth-container jth-code-content">
