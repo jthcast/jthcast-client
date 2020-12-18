@@ -24,14 +24,18 @@
     padding-top: 1rem;
     padding-bottom: 1rem;
     list-style: none;
-  
-    // .jth-card{
-    //   transition: transform 0.1s ease-in-out;
-  
-    //   &:hover{
-    //     transform: scale(1.03);
-    //   }
-    // }
+
+    .jth-card{
+
+      img{
+        max-height: 15.188rem;
+      }
+    
+      //   &:hover{
+      //     transform: scale(1.03);
+      //   }
+      // }
+    }
   }
 }
 
