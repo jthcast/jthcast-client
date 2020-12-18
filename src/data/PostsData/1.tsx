@@ -41,6 +41,7 @@ const Item = (): JSX.Element => {
         <img
           src="https://cdn.jsdelivr.net/gh/jthcast/jthcast-client@master/src/resources/images/post/1/structure.png?raw=true"
           aria-label="Structure"
+          alt="Structure"
         />
         <figcaption>
           이번 블로그를 개발하며 Atomic Design으로 구성한 파일 구조. Templates
@@ -49,10 +50,7 @@ const Item = (): JSX.Element => {
         </figcaption>
       </figure>
       <p>
-        자세한 정의와 설명은 이 방법론을 주장한 Brad Frost의 홈페이지를 참고하기
-        바란다.
-      </p>
-      <p>
+        자세한 정의와 설명은 이 방법론을 주장한{' '}
         <a
           target="_blank"
           rel="noreferrer"
@@ -61,6 +59,7 @@ const Item = (): JSX.Element => {
         >
           Brad Frost의 홈페이지
         </a>
+        를 참고하기 바란다.
       </p>
       <h3>Atoms</h3>
       <p>Atomic Design에서 가장 기초가 되는 컴포넌트인 Atoms를 알아보자.</p>
@@ -90,7 +89,8 @@ const Item = (): JSX.Element => {
       <figure>
         <img
           src="https://cdn.jsdelivr.net/gh/jthcast/jthcast-client@master/src/resources/images/post/1/header.jpg?raw=true"
-          aria-label="Header image"
+          aria-label="Header"
+          alt="Header"
         />
         <figcaption>
           여러 가지 구성 요소들이 모여 만들어진 헤더 컴포넌트
@@ -135,7 +135,8 @@ const Item = (): JSX.Element => {
       <figure>
         <img
           src="https://cdn.jsdelivr.net/gh/jthcast/jthcast-client@master/src/resources/images/post/1/figma%20switch.png?raw=true"
-          aria-label="Figma Switch image"
+          aria-label="Figma Switch"
+          alt="Figma Switch"
         />
         <figcaption>
           Figma도 컴포넌트 기반으로 디자인한다. 해님 표정이... 강렬하다.
