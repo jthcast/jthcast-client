@@ -50,14 +50,14 @@ const Item = (): JSX.Element => {
         </figcaption>
       </figure>
       <p>
-        자세한 정의와 설명은 이 방법론을 주장한{' '}
+        자세한 정의와 설명은{' '}
         <a
           target="_blank"
           rel="noreferrer"
           href="https://atomicdesign.bradfrost.com/"
           className="jth-external-link"
         >
-          Brad Frost의 홈페이지
+          Atomic Design by Brad Frost
         </a>
         를 참고하기 바란다.
       </p>
