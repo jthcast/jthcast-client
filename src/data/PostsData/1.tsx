@@ -57,11 +57,9 @@ const Item = (): JSX.Element => {
           target="_blank"
           rel="noreferrer"
           href="https://atomicdesign.bradfrost.com/"
+          className="jth-external-link"
         >
           Brad Frost의 홈페이지
-          <span role="img" aria-label="right pointing finger">
-            👉
-          </span>
         </a>
       </p>
       <h3>Atoms</h3>
@@ -72,12 +70,8 @@ const Item = (): JSX.Element => {
         <span className="jth-text">최소</span> 기능과 디자인으로 구성한다.
       </p>
       <p>
-        이 블로그 개발에 쓰인 스위치 컴포넌트는{' '}
-        <span role="img" aria-label="right pointing finger">
-          👉
-        </span>{' '}
-        <Switch /> 이렇게 생겼다. 기본 HTML 태그와 최소 기능의 자바스크립트로
-        만들어진 Atom 단계의 컴포넌트다.
+        이 블로그 개발에 쓰인 스위치 컴포넌트는 <Switch /> 이렇게 생겼다. 기본
+        HTML 태그와 최소 기능의 자바스크립트로 만들어진 Atom 단계의 컴포넌트다.
       </p>
       <h3>Molecules</h3>
       <p>
@@ -86,9 +80,6 @@ const Item = (): JSX.Element => {
       </p>
       <p>
         위의 기본 스위치에 내용물과 상태를 추가하여 다크 모드 스위치로 만들었다.{' '}
-        <span role="img" aria-label="right pointing finger">
-          👉
-        </span>{' '}
         <DarkModeSwitch />
       </p>
       <h3>Organizms</h3>
