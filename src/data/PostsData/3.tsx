@@ -98,13 +98,6 @@ export default darkModeCheck;
   
   background-color: var(--background-base);
   color: var(--color-base);
-
-  *{
-    &::selection{
-      background: var(--color-base);
-      color: var(--background-base);
-    }
-  }
 }
   
 [data-theme="dark"] {
@@ -122,13 +115,6 @@ export default darkModeCheck;
 
   background-color: var(--background-base);
   color: var(--color-base);
-
-  *{
-    &::selection{
-      background: var(--color-base);
-      color: var(--background-base);
-    }
-  }
 }
 `;
   return (
