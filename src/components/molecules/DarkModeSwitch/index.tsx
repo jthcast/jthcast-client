@@ -5,7 +5,7 @@ import Switch from '../../atoms/Switch';
 import { darkModeState } from '../../../recoilStates';
 
 const DarkModeSwitch = (): JSX.Element => {
-  const [dark, setDark] = useRecoilState(darkModeState);
+  const [isDark, setDark] = useRecoilState(darkModeState);
   // const systemPreference = window.matchMedia('(prefers-color-scheme: dark)');
   // const checkSystemPreference = useCallback(() => {
   //   if (systemPreference.matches) {
@@ -16,16 +16,16 @@ const DarkModeSwitch = (): JSX.Element => {
   // }, [systemPreference.matches, setDark]);
 
   const darkModeHandling = () => {
-    setDark(!dark);
+    setDark(!isDark);
   };
 
   useEffect(() => {
-    if (dark) {
+    if (isDark) {
       document.body.setAttribute('data-theme', 'dark');
     } else {
       document.body.setAttribute('data-theme', 'light');
     }
-  }, [dark]);
+  }, [isDark]);
 
   // useEffect(() => {
   //   checkSystemPreference();
@@ -39,7 +39,7 @@ const DarkModeSwitch = (): JSX.Element => {
   return (
     <Switch
       className="switch-darkMode"
-      checked={dark}
+      checked={isDark}
       unCheckedChildren="🌞"
       checkedChildren="🌜"
       onClick={darkModeHandling}
