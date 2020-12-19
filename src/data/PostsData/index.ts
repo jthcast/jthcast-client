@@ -1,5 +1,6 @@
-// import atomicDesign from '../../resources/images/post/1/atomic-design-process.png';
+// import atomicDesign from '../../resources/images/post/1/atomic design title.jpg';
 // import accessibility from '../../resources/images/post/2/accessibility.jpg';
+// import darkMode from '../../resources/images/post/3/darkMode title.jpg';
 
 export interface PostsDataProps {
   seq: string;
@@ -14,6 +15,18 @@ export interface PostsDataProps {
 }
 
 const posts: Array<PostsDataProps> = [
+  // {
+  //   seq: '3',
+  //   title: 'CSS변수를 활용하여 다크 모드 구현하기',
+  //   tags: ['CSS'],
+  //   content:
+  //     '모바일 활용이 점차 늘어남에 따라 웹 생태계도 PC 대신 모바일을 중점으로 맞춰지고 있다. 특히 모바일에서 어두운 테마를 사용하는 사용자가 많아짐에 따라 웹 페이지도 다크 모드를 지원하는 경우가 많아지고 있다. CSS 변수를 활용하여 다크 모드를 구현해 보자.',
+  //   registrationDate: '2020-12-20',
+  //   modifiedDate: '',
+  //   image: darkMode,
+  //   series: 'jthCast',
+  //   visible: true,
+  // },
   {
     seq: '2',
     title: '웹 표준과 웹 접근성을 지키기 위한 노력이 필요한 이유',
@@ -36,7 +49,7 @@ const posts: Array<PostsDataProps> = [
     registrationDate: '2020-12-16',
     modifiedDate: '2020-12-19',
     image:
-      'https://cdn.jsdelivr.net/gh/jthcast/jthcast-client@master/src/resources/images/post/1/atomic-design-process.png?raw=true',
+      'https://cdn.jsdelivr.net/gh/jthcast/jthcast-client@master/src/resources/images/post/1/atomic%20design%20title.jpg?raw=true',
     series: 'jthCast',
     visible: true,
   },
