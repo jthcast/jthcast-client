@@ -1,4 +1,5 @@
 // import atomicDesign from '../../resources/images/post/1/atomic-design-process.png';
+// import accessibility from '../../resources/images/post/2/accessibility.jpg';
 
 export interface PostsDataProps {
   seq: string;
@@ -14,13 +15,26 @@ export interface PostsDataProps {
 
 const posts: Array<PostsDataProps> = [
   {
+    seq: '2',
+    title: '웹 표준과 웹 접근성을 지키기 위한 노력이 필요한 이유',
+    tags: ['Accessibility'],
+    content:
+      '인터넷 서핑을 하다가 마우스 스크롤 버튼으로 새 창에서 보기라든지 탭으로 다음 메뉴 선택하기 등 당연히 동작해야 하는 것들이 안되는 사이트를 만난 적이 있을 것이다. 보통은 웹 표준을 지키지 않아 웹 접근성에 부합하지 않는 화면으로 개발되었기 때문이다. 이러한 경험이 없어도 한 번쯤 들어봤을 웹 접근성이 대체 무엇인지, 왜 웹 접근성을 지켜야 하고 지키지 않으면 무슨 일이 벌어지는지 자세히 알아보자.',
+    registrationDate: '2020-12-19',
+    modifiedDate: '',
+    image:
+      'https://cdn.jsdelivr.net/gh/jthcast/jthcast-client@master/src/resources/images/post/2/accessibility.jpg?raw=true',
+    series: 'jthCast',
+    visible: true,
+  },
+  {
     seq: '1',
     title: 'Atomic Design으로 파일 구조 만들고 블로그 개발 시작한 이야기',
     tags: ['Architect'],
     content:
       'React로 프로젝트를 시작하려고 마음먹은 뒤, React create app으로 프로젝트를 생성 후 이제부터 무엇을 어떻게 해야 할지 고민한 적이 있을 것이다. 보통 가장 먼저 하는 건 앞으로 어떻게 설계된 내용들을 구현할지 아키텍처를 구성하는 일 일 것이다. 컴포넌트를 기반으로 쌓아올리는 React와 Figma는 Atomic Design이 가장 적격이라고 생각하여 이번에 시도해 보았다.',
     registrationDate: '2020-12-16',
-    modifiedDate: '',
+    modifiedDate: '2020-12-19',
     image:
       'https://cdn.jsdelivr.net/gh/jthcast/jthcast-client@master/src/resources/images/post/1/atomic-design-process.png?raw=true',
     series: 'jthCast',
