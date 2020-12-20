@@ -28,7 +28,12 @@ const Portfolios = (): JSX.Element => {
                   <li key={portfolio.seq}>
                     <article className="jth-portfolios-item">
                       {portfolio.image && (
-                        <img src={portfolio.image} alt={portfolio.title} />
+                        <Link
+                          to={`/portfolio/${portfolio.seq}`}
+                          aria-label={portfolio.title}
+                        >
+                          <img src={portfolio.image} alt={portfolio.title} />
+                        </Link>
                       )}
                       <div className="jth-portfolios-item-info">
                         {portfolio.title && portfolio.detailPage ? (
