@@ -2,6 +2,9 @@ import {
   IconProps,
   IconCombination,
   IconPermutation,
+  IconGCD,
+  IconLCM,
+  IconSieve,
 } from '../../components/atoms/Icons';
 
 export interface CodeProps {
@@ -22,6 +25,36 @@ export interface CodeProps {
 }
 
 const codes: Array<CodeProps> = [
+  {
+    seq: '5',
+    title: '에라토스테네스의 체',
+    subTitle: '체로 치듯이 수를 걸러내 소수를 찾는 방법',
+    tags: ['정수론'],
+    registrationDate: '2020-12-21',
+    modifiedDate: '',
+    icon: IconSieve,
+    visible: true,
+  },
+  {
+    seq: '4',
+    title: '최소공배수',
+    subTitle: '2개 이상의 수의 공배수 중에서 최소인 수',
+    tags: ['정수론'],
+    registrationDate: '2020-12-21',
+    modifiedDate: '',
+    icon: IconLCM,
+    visible: true,
+  },
+  {
+    seq: '3',
+    title: '최대공약수',
+    subTitle: '2개 이상의 수의 공약수 중에서 최대인 수',
+    tags: ['정수론'],
+    registrationDate: '2020-12-21',
+    modifiedDate: '',
+    icon: IconGCD,
+    visible: true,
+  },
   {
     seq: '2',
     title: '순열',
