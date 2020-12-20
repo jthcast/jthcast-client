@@ -44,11 +44,9 @@ const Item = (): JSX.Element => {
                 rel="noreferrer"
                 target="_blank"
                 href="https://jthcast.github.io/"
+                className="jth-external-link"
               >
-                JthCast 둘러보기{' '}
-                <span role="img" aria-label="Right Pointing Backhand Emoji">
-                  👉
-                </span>
+                JthCast 둘러보기
               </a>
             </p>
           </div>
@@ -81,11 +79,9 @@ const Item = (): JSX.Element => {
               rel="noreferrer"
               target="_blank"
               href="https://github.com/jthcast/jthcast-client/"
+              className="jth-external-link"
             >
-              JthCast Github 둘러보기{' '}
-              <span role="img" aria-label="Right Pointing Backhand Emoji">
-                👉
-              </span>
+              JthCast Github 둘러보기
             </a>
           </p>
         </div>
