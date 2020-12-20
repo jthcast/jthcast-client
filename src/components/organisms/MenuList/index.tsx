@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import './MenuList.scss';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
@@ -18,18 +18,58 @@ const MenuList = ({
 }: MenuListProps): JSX.Element => {
   const { t } = useTranslation();
   const [menuState, setMenuState] = useState(false);
+  const firstTabEl = document.querySelectorAll(
+    '.jth-menuList-items li a'
+  )[0] as HTMLAnchorElement;
+  const lastTabEl = document.querySelector(
+    '.jth-scrollButton-menuList-menu'
+  ) as HTMLLIElement;
 
   const menuListHandling = () => {
     setMenuState(!menuState);
   };
 
+  const keyDownHandling = useCallback(
+    (event: KeyboardEvent) => {
+      if (event.code === 'Escape' && menuState) {
+        setMenuState(false);
+      }
+      if (
+        event.code === 'Tab' &&
+        event.target === lastTabEl &&
+        !event.shiftKey
+      ) {
+        event.preventDefault();
+        firstTabEl.focus();
+      }
+      if (
+        event.code === 'Tab' &&
+        event.target === firstTabEl &&
+        event.shiftKey
+      ) {
+        event.preventDefault();
+        lastTabEl.focus();
+      }
+    },
+    [menuState, firstTabEl, lastTabEl]
+  );
+
   useEffect(() => {
     if (menuState) {
       document.body.classList.add('jth-menuList-show');
+      firstTabEl.focus();
     } else {
       document.body.classList.remove('jth-menuList-show');
     }
-  }, [menuState]);
+  }, [menuState, firstTabEl]);
+
+  useEffect(() => {
+    window.addEventListener('keydown', (event) => keyDownHandling(event));
+
+    return () => {
+      window.removeEventListener('keydown', (event) => keyDownHandling(event));
+    };
+  }, [keyDownHandling]);
 
   return (
     <>
@@ -38,7 +78,7 @@ const MenuList = ({
           showStartPosition ? ` jth-menuList-${showStartPosition}` : ``
         }${className ? ` ${className}` : ``}`}
         role="dialog"
-        aria-modal={menuState}
+        aria-modal="true"
       >
         <div className="jth-menuList-items">
           <ul className="jth-menuList-links">
