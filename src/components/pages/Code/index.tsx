@@ -47,7 +47,7 @@ const Code = (): JSX.Element => {
               {/* {codeState.registrationDate && (
                 <time>{codeState.registrationDate}</time>
               )} */}
-              {codeState.icon && codeState.icon({})}
+              {codeState.icon && codeState.icon}
             </section>
             <section className="jth-container jth-code-content">
               <ErrorBoundary>
@@ -70,7 +70,7 @@ const Code = (): JSX.Element => {
                     return (
                       <li key={code.seq}>
                         <Link to={`/codes/${code.seq}`} aria-label={code.title}>
-                          {code.icon && code.icon({})}
+                          {code.icon && code.icon}
                           <p>{code.title}</p>
                         </Link>
                       </li>

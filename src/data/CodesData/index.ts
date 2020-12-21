@@ -1,5 +1,4 @@
 import {
-  IconProps,
   IconCombination,
   IconPermutation,
   IconGCD,
@@ -14,13 +13,7 @@ export interface CodeProps {
   tags?: string[];
   registrationDate?: string;
   modifiedDate?: string;
-  icon?: ({
-    className,
-    style,
-    spin,
-    rotate,
-    onClick,
-  }: IconProps) => JSX.Element;
+  icon?: JSX.Element;
   visible: boolean;
 }
 
@@ -32,7 +25,7 @@ const codes: Array<CodeProps> = [
     tags: ['정수론'],
     registrationDate: '2020-12-21',
     modifiedDate: '',
-    icon: IconSieve,
+    icon: IconSieve({}),
     visible: true,
   },
   {
@@ -42,7 +35,7 @@ const codes: Array<CodeProps> = [
     tags: ['정수론'],
     registrationDate: '2020-12-21',
     modifiedDate: '',
-    icon: IconLCM,
+    icon: IconLCM({}),
     visible: true,
   },
   {
@@ -52,7 +45,7 @@ const codes: Array<CodeProps> = [
     tags: ['정수론'],
     registrationDate: '2020-12-21',
     modifiedDate: '',
-    icon: IconGCD,
+    icon: IconGCD({}),
     visible: true,
   },
   {
@@ -63,7 +56,7 @@ const codes: Array<CodeProps> = [
     tags: ['확률 및 통계학'],
     registrationDate: '2020-12-17',
     modifiedDate: '2020-12-18',
-    icon: IconPermutation,
+    icon: IconPermutation({}),
     visible: true,
   },
   {
@@ -73,7 +66,7 @@ const codes: Array<CodeProps> = [
     tags: ['확률 및 통계학'],
     registrationDate: '2020-12-17',
     modifiedDate: '',
-    icon: IconCombination,
+    icon: IconCombination({}),
     visible: true,
   },
 ];

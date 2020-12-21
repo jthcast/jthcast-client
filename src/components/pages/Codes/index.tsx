@@ -105,7 +105,7 @@ const Codes = (): JSX.Element => {
                 return (
                   <li key={code.seq}>
                     <Link to={`/codes/${code.seq}`} aria-label={code.title}>
-                      {code.icon && code.icon({})}
+                      {code.icon && code.icon}
                       <p>{code.title}</p>
                     </Link>
                   </li>
