@@ -83,19 +83,24 @@ export default ErrorBoundary;
       <p>
         · getSnapshotBeforeUpdate: 가장 마지막으로 렌더링 된 결과가 DOM 등에
         반영되었을 때 호출
-        <br />
-        <br />· getDerivedStateFromError: 하위의 자손 컴포넌트에서 오류가
-        발생했을 때 render 단계에서 호출
-        <blockquote>
-          render 단계는 React가 DOM 갱신이 일어날 때 이전과 이후를 비교하며 변경
-          사항을 계산하는 단계이다.
-        </blockquote>
+      </p>
+      <p>
+        · getDerivedStateFromError: 하위의 자손 컴포넌트에서 오류가 발생했을 때
+        render 단계에서 호출
+      </p>
+      <blockquote>
+        render 단계는 React가 DOM 갱신이 일어날 때 이전과 이후를 비교하며 변경
+        사항을 계산하는 단계이다.
+      </blockquote>
+      <p>
         · componentDidCatch: 하위의 자손 컴포넌트에서 오류가 발생했을 때 commit
         단계에서 호출
-        <blockquote>
-          commit 단계는 React가 비교를 끝내고 DOM에 직접적으로 갱신될 내용을
-          적용하는 단계이다.
-        </blockquote>
+      </p>
+      <blockquote>
+        commit 단계는 React가 비교를 끝내고 DOM에 직접적으로 갱신될 내용을
+        적용하는 단계이다.
+      </blockquote>
+      <p>
         위의 세 가지 라이프 사이클이 아직은 Hooks에서 구현되지 않았기 때문이다.
       </p>
       <p>
