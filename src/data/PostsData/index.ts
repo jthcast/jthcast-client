@@ -1,6 +1,7 @@
 // import atomicDesign from '../../resources/images/post/1/atomic design title.jpg';
 // import accessibility from '../../resources/images/post/2/accessibility.jpg';
 // import darkMode from '../../resources/images/post/3/darkMode title.jpg';
+// import errorBoundary from '../../resources/images/post/4/error boundary title.jpg';
 
 export interface PostsDataProps {
   seq: string;
@@ -15,6 +16,19 @@ export interface PostsDataProps {
 }
 
 const posts: Array<PostsDataProps> = [
+  {
+    seq: '4',
+    title: 'React에 아직은 Class 형식이 필요한 이유(feat. Errorboundary)',
+    tags: ['React'],
+    content:
+      'React Hooks가 대세가 된 요즘, Class 형식으로 작성된 컴포넌트를 보면 한숨부터 나오기 마련이다. 그러나 아직까지는 Class 형식이 필요하다. Errorboundary를 구현하며 왜 필요한지 알아보자.',
+    registrationDate: '2020-12-22',
+    modifiedDate: '',
+    image:
+      'https://cdn.jsdelivr.net/gh/jthcast/jthcast-client@master/src/resources/images/post/4/error%20boundary%20title.jpg?raw=true',
+    series: 'jthCast',
+    visible: true,
+  },
   {
     seq: '3',
     title: 'CSS변수를 활용하여 다크 모드 구현하기',
